@@ -1,6 +1,6 @@
 <?php
 
-require 'config.php';
-require 'functions.php';
+require_once 'config.php';
+require_once 'functions.php';
 
 run();
