@@ -5,6 +5,6 @@ MAINTAINER Tarun Mohanty
 
 COPY src /var/www/data
 COPY Dockerfile/vhost.conf /etc/apache2/sites-available/000-default.conf
-RUN chown -R www-data:www-data /srv/app && a2enmod rewrite
+RUN chown -R www-data:www-data /var/www/data && a2enmod rewrite
 
 
