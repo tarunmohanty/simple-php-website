@@ -3,8 +3,8 @@ FROM php:5.6-apache
 
 MAINTAINER Tarun Mohanty
 
-COPY src /var/www/data
-COPY Dockerfile/vhost.conf /etc/apache2/sites-available/000-default.conf
-RUN chown -R www-data:www-data /var/www/data && a2enmod rewrite
+COPY src /var/www/html
+#COPY Dockerfile/vhost.conf /etc/apache2/sites-available/000-default.conf
+#RUN chown -R www-data:www-data /var/www/html && a2enmod rewrite
 
 
